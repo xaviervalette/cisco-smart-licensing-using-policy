@@ -16,7 +16,7 @@ Report Id,          State,    Flag, Feature Name
 ```
 
 ## How to get RUM ?
-### From the device via CLI
+### On device via CLI
 ```console
 STE-7ALD-WLC-1# conf t                   
 Enter configuration commands, one per line.  End with CNTL/Z.
@@ -25,3 +25,9 @@ STE-7ALD-WLC-1(config)# exit
 STE-7ALD-WLC-1# test license smart rum show 1671840757
 {"version":"2.0","asset_identification":{"report_id":1671840757,"asset":{"name":"regid.2018-05.com.cisco.WLC_9500C,1.0_85665885-b865-4e32-8184-5510412fcb54"},"instance":{"sudi":{"udi_pid":"C9800-CL-K9","udi_serial_number":"9NTUEA8FIIH"}}},"signature":{"signing_type":"builtin","key":"regid.2018-05.com.cisco.WLC_9500C,1.0_85665885-b865-4e32-8184-5510412fcb54","value":"mrAJAUGq94+dZqnUJ684iGm82E1fCbJVjLN5CoxrM/Q="},"meta":{"entitlement_tag":"regid.2017-08.com.cisco.AIR-DNA-A,1.0_b6308627-3ab0-4a11-a3d9-586911a0d790","utility_enabled":false,"software_version":"17.09.02","ha_udi":[{"role":"Active","sudi":{"udi_pid":"C9800-CL-K9","udi_serial_number":"9NTUEA8FIIH"}}]},"measurements":[{"log_time":1680767427,"metric_name":"ENTITLEMENT","start_time":1680767118,"end_time":1680807618,"sample_interval":40500,"num_samples":46,"meta":{"added_sudi_list":[{"udi_pid":"AIR-AP2802I-E-K9","udi_serial_number":"FDW2109B29P"},{"udi_pid":"AIR-AP2802I-E-K9","udi_serial_number":"FDW2109B2BX"},{"udi_pid":"AIR-AP2802I-E-K9","udi_serial_number":"FDW2028D3SV"}],"removed_sudi_list":[]},"value":{"type":"COUNT","value":"3"}}]}
 ```
+
+### On CSSM / SSM On-prem / CSLU
+Go to the CSSM / SSM On-Prem / CSLU inventory, then to SL Using Policy
+<p align="center">
+<img width="1000" alt="image" src="https://github.com/xaviervalette/cisco-smart-licensing-using-policy/assets/28600326/2db9ea7b-4478-44d2-83ea-d5b61d1e404d">
+</p>
