@@ -1,6 +1,6 @@
 # Example of a RUM report from STE-7ALD-WLC-1 (C9800-CL)
 
-```
+```console
 STE-7ALD-WLC-1# sh license rum id all
 Smart Licensing Usage Report:
 ====================================
@@ -17,7 +17,7 @@ Report Id,          State,    Flag, Feature Name
 
 ## How to get RUM ?
 ### From the device via CLI
-```
+```console
 STE-7ALD-WLC-1# conf t                   
 Enter configuration commands, one per line.  End with CNTL/Z.
 STE-7ALD-WLC-1(config)# service internal 
