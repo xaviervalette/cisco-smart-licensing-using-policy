@@ -31,3 +31,107 @@ Go to the CSSM / SSM On-Prem / CSLU inventory, then to SL Using Policy
 <p align="center">
 <img width="1000" alt="image" src="https://github.com/xaviervalette/cisco-smart-licensing-using-policy/assets/28600326/2db9ea7b-4478-44d2-83ea-d5b61d1e404d">
 </p>
+
+### RUM payload
+
+```json
+{
+  "version": "2.0",
+  "asset_identification": {
+    "report_id": 1671840750,
+    "asset": {
+      "name": "regid.2018-05.com.cisco.WLC_9500C,1.0_85665885-b865-4e32-8184-5510412fcb54"
+    },
+    "instance": {
+      "sudi": {
+        "udi_pid": "C9800-CL-K9",
+        "udi_serial_number": "9NTUEA8FIIH"
+      }
+    }
+  },
+  "signature": {
+    "signing_type": "builtin",
+    "key": "regid.2018-05.com.cisco.WLC_9500C,1.0_85665885-b865-4e32-8184-5510412fcb54",
+    "value": "EfQw4ng6N90vukN6Gd7GHad8MZClqheuuYlkLO3x334="
+  },
+  "meta": {
+    "entitlement_tag": "regid.2018-06.com.cisco.DNA_NWStack,1.0_e7244e71-3ad5-4608-8bf0-d12f67c80896",
+    "utility_enabled": false,
+    "software_version": "17.09.02",
+    "ha_udi": [
+      {
+        "role": "Active",
+        "sudi": {
+          "udi_pid": "C9800-CL-K9",
+          "udi_serial_number": "9NTUEA8FIIH"
+        }
+      }
+    ]
+  },
+  "measurements": [
+    {
+      "log_time": 1671880245,
+      "metric_name": "ENTITLEMENT",
+      "start_time": 1671880245,
+      "end_time": 1671966644,
+      "sample_interval": 86399,
+      "num_samples": 97,
+      "meta": {
+        "removed_sudi_list": [],
+        "added_sudi_list": [
+          {
+            "udi_pid": "AIR-AP2802I-E-K9",
+            "udi_serial_number": "FDW2109B29P"
+          },
+          {
+            "udi_pid": "AIR-AP2802I-E-K9",
+            "udi_serial_number": "FDW2109B2BX"
+          }
+        ]
+      },
+      "value": {
+        "type": "COUNT",
+        "value": "2"
+      }
+    },
+    {
+      "log_time": 1671966645,
+      "metric_name": "ENTITLEMENT",
+      "start_time": 1671966644,
+      "end_time": 1672341045,
+      "sample_interval": 374401,
+      "num_samples": 417,
+      "meta": {
+        "removed_sudi_list": [],
+        "added_sudi_list": [
+          {
+            "udi_pid": "AIR-AP2802I-E-K9",
+            "udi_serial_number": "FDW2028D3SV"
+          }
+        ]
+      },
+      "value": {
+        "type": "COUNT",
+        "value": "3"
+      }
+    },
+    {
+      "log_time": 1672338319,
+      "metric_name": "ENTITLEMENT",
+      "start_time": 1672341045,
+      "end_time": 1673790212,
+      "sample_interval": 1449167,
+      "num_samples": 1615,
+      "meta": {
+        "clock_change_delta": "-3433",
+        "termination_reason": "ProductReload",
+        "close_reason": "ProductReload"
+      },
+      "value": {
+        "type": "COUNT",
+        "value": "3"
+      }
+    }
+  ]
+}
+```
